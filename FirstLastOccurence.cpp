@@ -33,7 +33,7 @@ while(start<=end){
     }
     else{
         result=mid;
-        end = mid-1;
+        start=mid+1;
     }
 }
 return result;
