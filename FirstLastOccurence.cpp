@@ -40,13 +40,15 @@ return result;
 }
 pair<int,int> findFirstLastOccurrence(vector<int> vec,int x)
 {
-    int last= lastOccurence(vec,x);
-    int first= firstOccurence(vec,x);
+    int last= lastOccurrence(vec,x);
+    int first= firstOccurrence(vec,x);
     return {first,last};
 
 }
 int main()
 {
     vector<int> vec = {1,2,2,3,3,3,4,5,5,6,6};
-    cout<<findFirstLastOccurrence(vec,2);
+    pair<int,int> p1;
+    p1=findFirstLastOccurrence(vec,2);
+    cout<<p1.first<<","<<p1.second;
 }
